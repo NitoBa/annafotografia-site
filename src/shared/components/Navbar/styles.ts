@@ -23,6 +23,7 @@ export const Container = styled.nav`
           border-radius:8px;
           background-color: transparent;
           transition: .2s;
+          font-size: 25px;
         
           &:hover{
             background-color: var(--primaryColor);
