@@ -1,14 +1,15 @@
 import Head from 'next/head'
+import NavBar from '../shared/components/Navbar'
 
 
 export default function Home() {
   return (
     <div >
       <Head>
-        <title>Home</title>
+        <title>Anna Fotografia</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1>Hello</h1>
+      <NavBar />
     </div>
   )
 }
