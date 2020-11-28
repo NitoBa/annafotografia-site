@@ -2,6 +2,14 @@ import { createGlobalStyle } from 'styled-components'
 
 export default createGlobalStyle`
 
+:root{
+  --primaryColor:#6C63FF;
+  --primaryColorLight:#928BFF;
+  --primaryColorDark: #615ADA;
+  --whatsappColor:#25D366;
+  --whatsappColorDark:#075E54;
+}
+
 *, html,
 body {
   padding: 0;
