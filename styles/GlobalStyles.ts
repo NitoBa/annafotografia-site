@@ -23,7 +23,9 @@ body {
 
 button {
     cursor: pointer;
-    border: 0;
+    border: none;
+    outline:none;
+    
 }
 
 a {
