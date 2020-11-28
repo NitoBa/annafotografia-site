@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.nav`
     display: flex;
     align-items:center;
-    height:70px;
+    height:10vh;
     
     padding: 0 16px;
     justify-content: space-between;
