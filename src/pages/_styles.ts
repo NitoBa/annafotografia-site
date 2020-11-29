@@ -64,10 +64,10 @@ export const ContainerHome = styled.main`
         h2, h1{
             color: white;
             font-weight: 400;
-            transform: translateY(-100px);
+            transform: translateY(-200px);
         }
         h2{
-            font-size:20px;
+            font-size:30px;
             margin-bottom:70px;
         }
         h1{
