@@ -9,13 +9,13 @@ import { ContainerRoot, Container, ContainerHome, ContainerAbout } from './_styl
 
 const Home: React.FC = () => {
   return (
-    <ContainerRoot className="div-home">
+    <ContainerRoot id="div-home">
       <Head>
         <title>Anna Fotografia</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <NavBar />
-      <Container>
+      <Container id="home">
         <img className="bg-profile" src="/profile.jpg" alt="profile" />
         <ContainerHome>
           <div className="container-icons">
@@ -40,7 +40,7 @@ const Home: React.FC = () => {
             </div>
           </div>
         </ContainerHome>
-        <ContainerAbout>
+        <ContainerAbout id="about">
           <div className="container-text-about">
             <div id="title-container">
               <p>Quem sou eu?</p>

@@ -22,19 +22,22 @@ export const ContainerHome = styled.main`
     display:flex;
     align-items: center;
     justify-content:center;
-    background: linear-gradient(180deg, rgba(150, 143, 255, 0.52) 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(180deg, rgba(150, 143, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
     display:flex;
     height:90vh;
     width: 100vw;
     position:relative;
+    animation-name: animated-gradient;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    
+    
+
 
     @keyframes animated-text {
-        
         33%  {color:grey}
         66%  {color:white}
         100%  {color:black}
-        
-
     }
 
 

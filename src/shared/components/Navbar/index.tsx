@@ -13,6 +13,11 @@ const Navbar: React.FC = () => {
         setIsHiddenSidebar(!isHiddenSidebar);
     }
 
+    function scroll(id: string) {
+        const element = document.getElementById(id);
+        element.scrollIntoView({ behavior: 'smooth' });
+    }
+
     return (
         <Container>
             <Link href="/">
@@ -25,7 +30,7 @@ const Navbar: React.FC = () => {
             <FiAlignJustify size={35} id="icon" onClick={toggleSideBar} />
             <ul className="container-nav-options">
                 <li>
-                    <button>
+                    <button onClick={() => scroll('about')}>
                         Sobre
                     </button>
                 </li>
