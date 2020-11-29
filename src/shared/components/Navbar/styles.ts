@@ -52,10 +52,10 @@ export const SideaBar = styled.div`
     position:absolute;
     right: 0;
     top:0;
-    z-index:${props => (props.id === "sidebar" ? `100000` : `-1000`)};
+    z-index:${props => (props.id === "sidebar" ? `10000` : `-1000`)};
     background-color: var(--primaryColor);
     width:65vw;
-    height:100vh;
+    height:100%;
     opacity:  ${props => (props.id === "sidebar" ? `1` : `0`)};
     transition: .2s;
     .icon-back{

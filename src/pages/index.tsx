@@ -3,13 +3,13 @@ import Link from 'next/link'
 import NavBar from '../shared/components/Navbar'
 import { FiInstagram, FiMail, FiArrowDown } from 'react-icons/fi';
 
-import { Container, ContainerHome } from './_styles';
+import { ContainerRoot, Container, ContainerHome, ContainerAbout } from './_styles';
 
 
 
 const Home: React.FC = () => {
   return (
-    <div >
+    <ContainerRoot className="div-home">
       <Head>
         <title>Anna Fotografia</title>
         <link rel="icon" href="/favicon.ico" />
@@ -40,8 +40,25 @@ const Home: React.FC = () => {
             </div>
           </div>
         </ContainerHome>
+        <ContainerAbout>
+          <div className="container-text-about">
+            <div id="title-container">
+              <p>Quem sou eu?</p>
+            </div >
+            <div id="title-content">
+              <p>
+                Sou uma fotógrafa amante de borboletas que buscar transformar a vida das pessoas através das lentes realizando registros de momentos especiais
+            </p>
+            </div>
+          </div>
+          <div className="container-photo">
+            <div id="container-image">
+              <img src="/retrato.jpg" alt="image-sobre" />
+            </div>
+          </div>
+        </ContainerAbout>
       </Container>
-    </div>
+    </ContainerRoot>
   )
 }
 
