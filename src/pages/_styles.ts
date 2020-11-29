@@ -49,6 +49,11 @@ export const ContainerHome = styled.main`
         > a  + a {
             margin-top: 20px;
         }
+
+        @media(max-width:1024px){
+            top:75vh;
+            
+        }
     }
 
     .container-texts-home{
@@ -78,5 +83,23 @@ export const ContainerHome = styled.main`
             align-items:center;
             margin-bottom:20px;
         }
+
+        @media(max-width:1024px){
+
+        h1,h2{
+            transform: translateY(-250px);
+        }    
+        h2{
+            font-size:30px;
+        }
+
+        h1{
+            font-size:45px;
+            text-align:center;
+
+        }
     }
+    }
+
+    
 `;
