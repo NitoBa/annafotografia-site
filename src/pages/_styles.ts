@@ -11,9 +11,10 @@ export const Container = styled.div`
   }
 `;
 
-export const ContainerHome = styled.div`
+export const ContainerHome = styled.main`
     display:flex;
     align-items: center;
+    justify-content:center;
     background: linear-gradient(180deg, rgba(150, 143, 255, 0.52) 0%, rgba(255, 255, 255, 0) 100%);
     display:flex;
     height:90vh;
@@ -24,6 +25,8 @@ export const ContainerHome = styled.div`
         display: flex;
         flex-direction: column;
         align-items: center;
+        position:absolute;
+        left:0;
         margin-left: 16px;
         > a button{
             display: flex;
@@ -45,6 +48,35 @@ export const ContainerHome = styled.div`
         }
         > a  + a {
             margin-top: 20px;
+        }
+    }
+
+    .container-texts-home{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        
+        h2, h1{
+            color: white;
+            font-weight: 400;
+            transform: translateY(-100px);
+        }
+        h2{
+            font-size:20px;
+            margin-bottom:70px;
+        }
+        h1{
+            font-size:60px;
+        }
+
+
+        .role-down{
+            position: absolute;
+            bottom: 0;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            margin-bottom:20px;
         }
     }
 `;

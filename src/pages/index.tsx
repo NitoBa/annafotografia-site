@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import NavBar from '../shared/components/Navbar'
-import { FiInstagram, FiMail } from 'react-icons/fi';
+import { FiInstagram, FiMail, FiArrowDown } from 'react-icons/fi';
 
 import { Container, ContainerHome } from './_styles';
 
@@ -25,13 +25,19 @@ const Home: React.FC = () => {
 
               </button>
             </a>
-            <a href="mailto:brukum2@gmail.com" target="_blank">
+            <a href="mailto:annacarolinnefotografia@gmail.com?subject=Contato para fotografia&body='Olá tudo bem, fiquei interessado(a) pelo seu trabalho e gostaria de fazer algumas fotos com você'" target="_blank">
               <button>
                 <FiMail size={35} />
               </button>
             </a>
-
-
+          </div>
+          <div className="container-texts-home">
+            <h2>FOTÓGRAFA</h2>
+            <h1>Anna Carolinne Fotografia</h1>
+            <div className="role-down">
+              <p>role para baixo</p>
+              <FiArrowDown />
+            </div>
           </div>
         </ContainerHome>
       </Container>

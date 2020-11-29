@@ -33,6 +33,7 @@ export default class MyDocument extends Document {
     render() {
         return (
             <Html>
+
                 <Head>
                     {/* <title>Mabloc</title>
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -43,6 +44,7 @@ export default class MyDocument extends Document {
                     <meta property="og:image" content="https://mabloc.com/assets/Images/mabloc.jpg" />
                     <meta property="og:image:type" content="image/jpg" />
                     <meta property="og:type" content="website" /> */}
+
                 </Head>
 
                 <body>

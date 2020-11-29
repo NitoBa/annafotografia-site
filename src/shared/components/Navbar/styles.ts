@@ -11,6 +11,7 @@ export const Container = styled.nav`
   .logo {
       width:45px;
       height:45px;
+      cursor: pointer;
   }
 
   .container-nav-options{
@@ -23,7 +24,7 @@ export const Container = styled.nav`
           border-radius:8px;
           background-color: transparent;
           transition: .2s;
-          font-size: 25px;
+          font-size: 20px;
         
           &:hover{
             background-color: var(--primaryColor);
@@ -32,6 +33,60 @@ export const Container = styled.nav`
 
       }
 
-      
+      @media(max-width:1024px){  
+            display:none;
+            
+        }
   }
+  @media(min-width:1024px){  
+        #icon{
+            display:none;
+        }
+            
+    }
 `;
+
+export const SideaBar = styled.div`
+    /* display: ${props => (props.id === "hidden-sidebar" ? `flex` : `none`)};
+     */
+    display:flex;
+    flex-direction:column;
+    position:absolute;
+    right: 0;
+    top:0;
+    z-index:${props => (props.id === "sidebar" ? `100000` : `-1000`)};
+    background-color: var(--primaryColor);
+    width:65vw;
+    height:100vh;
+    opacity:  ${props => (props.id === "sidebar" ? `1` : `0`)};
+    transition: .2s;
+    .icon-back{
+        display:${props => (props.id === "hidden-icon" ? `none` : `flex`)};
+        margin-top:20px;
+        margin-left:20px;
+    }
+
+    #nav{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+
+    .container-nav-options-mobile{
+        display:flex;
+        align-items:center;
+        flex-direction:column;
+        margin-top:50px;
+        
+        > li button{
+          width:40vw;
+          padding:6px;
+          border-radius:8px;
+          background-color: white;
+          font-size: 18px;
+          margin:20px 0;
+
+      }
+    }
+`;
+
