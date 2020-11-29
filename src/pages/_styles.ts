@@ -51,8 +51,12 @@ export const ContainerHome = styled.main`
         }
 
         @media(max-width:1024px){
-            top:75vh;
-            
+            top:65vh;
+            > a button{
+                padding:12px;
+                width:50px;
+                height:50px;
+            }
         }
     }
 
@@ -64,7 +68,7 @@ export const ContainerHome = styled.main`
         h2, h1{
             color: white;
             font-weight: 400;
-            transform: translateY(-200px);
+            transform: translateY(-100px);
         }
         h2{
             font-size:30px;
@@ -87,14 +91,16 @@ export const ContainerHome = styled.main`
         @media(max-width:1024px){
 
         h1,h2{
-            transform: translateY(-250px);
+            transform: translateY(-70px);
         }    
         h2{
-            font-size:30px;
+            font-size:20px;
+            margin-bottom:60px;
+
         }
 
         h1{
-            font-size:45px;
+            font-size:30px;
             text-align:center;
 
         }
