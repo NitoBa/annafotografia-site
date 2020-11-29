@@ -47,8 +47,6 @@ export const Container = styled.nav`
 `;
 
 export const SideaBar = styled.div`
-    /* display: ${props => (props.id === "hidden-sidebar" ? `flex` : `none`)};
-     */
     display:flex;
     flex-direction:column;
     position:absolute;
