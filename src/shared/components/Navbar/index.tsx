@@ -15,7 +15,13 @@ const Navbar: React.FC = () => {
 
     function scroll(id: string) {
         const element = document.getElementById(id);
+        if (!isHiddenSidebar) {
+            element.scrollIntoView({ behavior: 'smooth' });
+            toggleSideBar();
+            return;
+        }
         element.scrollIntoView({ behavior: 'smooth' });
+
     }
 
     return (
@@ -58,7 +64,7 @@ const Navbar: React.FC = () => {
                 <div id="nav">
                     <ul className="container-nav-options-mobile">
                         <li>
-                            <button>
+                            <button onClick={() => scroll('about')} >
                                 Sobre
                     </button>
                         </li>
