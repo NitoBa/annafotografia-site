@@ -1,10 +1,14 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
+    ],
+    "typeRoots": [
+      "src/@types",
+      "node_modules/@types"
     ],
     "allowJs": true,
     "skipLibCheck": true,
@@ -25,5 +29,5 @@
   ],
   "exclude": [
     "node_modules"
-  ]
+  ],
 }

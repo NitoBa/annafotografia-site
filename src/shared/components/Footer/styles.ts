@@ -5,6 +5,7 @@ export const Container = styled.footer`
     display:flex;
     flex-direction:column;
     margin-top:40px;
+    width:100vw;
     background-color:var(--primaryColor);
 
     .content-footer-desktop{

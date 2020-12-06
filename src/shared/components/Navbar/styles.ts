@@ -1,10 +1,12 @@
 import styled from 'styled-components';
 
-export const Container = styled.nav`
+export const Container = styled.nav.attrs(props => ({
+    colorNav: props.className == "home" ? "home" : "no-home",
+}))`
     display: flex;
     align-items:center;
     height:10vh;
-    background-color:${props => props.color === "white" ? `white` : `var(--primaryColor)`};
+    background-color:${props => props.colorNav === "home" ? `white` : `var(--primaryColor)`};
     padding: 0 16px;
     justify-content: space-between;
 
@@ -12,7 +14,13 @@ export const Container = styled.nav`
       width:45px;
       height:45px;
       cursor: pointer;
+      filter: ${props => props.className === "home" ? `invert(0)` : `invert(1)`};
   }
+
+  #icon{
+    color: ${props => props.colorNav === "home" ? `black` : `white`};
+
+    }
 
   .container-nav-options{
       display: flex;
@@ -25,10 +33,12 @@ export const Container = styled.nav`
           background-color: transparent;
           transition: .2s;
           font-size: 20px;
+          color: ${props => props.colorNav === "home" ? `black` : `white`};
         
           &:hover{
-            background-color: ${props => props.color === "white" ? `var(--primaryColor)` : `white`};
-            color: white;
+            background-color: ${props => props.colorNav === "home" ? `var(--primaryColor)` : `white`};
+            color: ${props => props.colorNav === "home" ? `white` : `black`};
+            
         }
 
       }

@@ -16,7 +16,7 @@ const Home: React.FC = () => {
         <title>Anna Fotografia</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <NavBar color="white" />
+      <NavBar colorNav="home" />
       <Container id="home">
         <img className="bg-profile" src="/profile.jpg" alt="profile" />
         <ContainerHome>
@@ -70,7 +70,12 @@ const Home: React.FC = () => {
             <div className="sidebar-left" />
             <div id="content-div">
               {
-                PhotosPortfolio.map((photos) => <CardPortfolio key={photos.id} coverImg={photos.coverImg} title={photos.title} photosQuantity={photos.photosQuantity} path={photos.path} />)
+                PhotosPortfolio.map((photos) => <CardPortfolio key={photos.id}
+                  coverImg={photos.coverImg}
+                  title={photos.title}
+                  photosQuantity={photos.photosQuantity}
+                  path={photos.path}
+                />)
               }
             </div>
             <div className="sidebar-right" />

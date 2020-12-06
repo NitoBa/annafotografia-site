@@ -20,7 +20,7 @@ const CardPortfolio: React.FC<CardPortfolioProps> = (props: CardPortfolioProps) 
             <h3>
                 {props.photosQuantity} FOTOS
             </h3>
-            <Link href={props.path}>
+            <Link href={`/portfolio/${props.path}`}>
                 <a className="view-more">
                     Ver mais
                 </a>

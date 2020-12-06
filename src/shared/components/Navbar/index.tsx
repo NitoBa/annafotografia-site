@@ -5,7 +5,7 @@ import { FiAlignJustify, FiArrowLeft } from 'react-icons/fi';
 import { useState } from "react"
 
 interface NavProps {
-    color?: string;
+    colorNav?: string;
 }
 
 
@@ -29,7 +29,7 @@ const Navbar: React.FC<NavProps> = (props: NavProps) => {
     }
 
     return (
-        <Container>
+        <Container className={props.colorNav} >
             <Link href="/">
                 <img
                     className="logo"
