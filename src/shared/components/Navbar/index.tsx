@@ -3,6 +3,7 @@ import React from 'react';
 import { Container, SideaBar } from './styles';
 import { FiAlignJustify, FiArrowLeft } from 'react-icons/fi';
 import { useState } from "react"
+import { useRouter } from 'next/router'
 
 interface NavProps {
     colorNav?: string;
@@ -11,13 +12,20 @@ interface NavProps {
 
 const Navbar: React.FC<NavProps> = (props: NavProps) => {
 
+    const router = useRouter();
+
     const [isHiddenSidebar, setIsHiddenSidebar] = useState<boolean>(true);
 
     function toggleSideBar() {
         setIsHiddenSidebar(!isHiddenSidebar);
     }
 
-    function scroll(id: string) {
+    async function scroll(id: string) {
+
+        if (router.route != "/" && id != 'contato') {
+            await router.push('/');
+        }
+
         const element = document.getElementById(id);
         if (!isHiddenSidebar) {
             element.scrollIntoView({ behavior: 'smooth' });
