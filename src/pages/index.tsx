@@ -1,10 +1,11 @@
 import Head from 'next/head'
 import NavBar from '../shared/components/Navbar'
+import Footer from '../shared/components/Footer'
 import { FiInstagram, FiMail, FiArrowDown } from 'react-icons/fi';
 import CardPortfolio from './_components/CardPortfolio'
 import CardPackMemories from './_components/CardPackMemories'
 import { ContainerRoot, Container, ContainerHome, ContainerAbout, ContainerPortfolio, ContainerPackMemories } from './_styles';
-import { GetStaticProps } from 'next';
+
 import PhotosPortfolio from '../data/photos_portfolio'
 import PackMemories from '../data/pack_memories'
 
@@ -99,17 +100,10 @@ const Home: React.FC = () => {
             </div>
           </div>
         </ContainerPackMemories>
+        <Footer />
       </Container>
     </ContainerRoot>
   )
 }
 
 export default Home;
-
-const getStaticProps: GetStaticProps = async () => {
-  return {
-    props: {
-      PhotosPortfolio
-    }
-  }
-}

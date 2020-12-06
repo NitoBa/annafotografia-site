@@ -341,13 +341,21 @@ export const ContainerPackMemories = styled.div`
             font-size:3rem;
             font-weight:500;
             text-align:center;
+            @media(max-width:1200px){
+                font-size:2.2rem;
+            }
 
             #line-blue-pack-memories{
                 height:5px;
                 width:70%;
                 background-color:var(--primaryColor);
+
+                @media(max-width:370px){
+                    width:50%;
+                }
             }
         }
+
         
     }
     .pack-container{
@@ -378,3 +386,4 @@ export const ContainerPackMemories = styled.div`
 
     
 `
+

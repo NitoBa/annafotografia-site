@@ -16,7 +16,7 @@ const PhotosPortfolio = [
     {
         id: "3",
         coverImg: "/criativa.jpg",
-        title: "Casamentos",
+        title: "Fotos criativas",
         photosQuantity: 8,
         path: "/photo-criativas",
     }
