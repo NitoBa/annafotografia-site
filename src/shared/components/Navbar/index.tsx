@@ -29,7 +29,7 @@ const Navbar: React.FC = () => {
             <Link href="/">
                 <img
                     className="logo"
-                    src="/butterfly-alt1.svg"
+                    src="/icon-pack-2.svg"
                     alt="logo"
                 />
             </Link>
@@ -41,13 +41,13 @@ const Navbar: React.FC = () => {
                     </button>
                 </li>
                 <li>
-                    <button>
+                    <button onClick={() => scroll('portfolio')}>
                         Portfólio
                     </button>
 
                 </li>
                 <li>
-                    <button>
+                    <button onClick={() => scroll('pack-memories')}>
                         Pacotes de memórias
                     </button>
 

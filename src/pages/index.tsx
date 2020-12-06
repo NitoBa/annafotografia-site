@@ -1,11 +1,12 @@
 import Head from 'next/head'
-import Link from 'next/link'
 import NavBar from '../shared/components/Navbar'
 import { FiInstagram, FiMail, FiArrowDown } from 'react-icons/fi';
-
-import { ContainerRoot, Container, ContainerHome, ContainerAbout } from './_styles';
-
-
+import CardPortfolio from './_components/CardPortfolio'
+import CardPackMemories from './_components/CardPackMemories'
+import { ContainerRoot, Container, ContainerHome, ContainerAbout, ContainerPortfolio, ContainerPackMemories } from './_styles';
+import { GetStaticProps } from 'next';
+import PhotosPortfolio from '../data/photos_portfolio'
+import PackMemories from '../data/pack_memories'
 
 const Home: React.FC = () => {
   return (
@@ -57,9 +58,58 @@ const Home: React.FC = () => {
             </div>
           </div>
         </ContainerAbout>
+        <ContainerPortfolio id="portfolio">
+          <div className="title-portfolio">
+            <h1>
+              Portfólio
+              <div id="line-blue-portfolio" />
+            </h1>
+          </div>
+          <div className="content-portfolio">
+            <div className="sidebar-left" />
+            <div id="content-div">
+              {
+                PhotosPortfolio.map((photos) => <CardPortfolio key={photos.id} coverImg={photos.coverImg} title={photos.title} photosQuantity={photos.photosQuantity} path={photos.path} />)
+              }
+            </div>
+            <div className="sidebar-right" />
+
+          </div>
+        </ContainerPortfolio>
+        <ContainerPackMemories id="pack-memories">
+          <div className="title-pack-memories">
+            <h1>
+              Pacotes de memórias
+              <div id="line-blue-pack-memories" />
+            </h1>
+          </div>
+          <div className="pack-container">
+            <div className="pack-memories-content">
+              {
+                PackMemories.map((pack) => <CardPackMemories
+                  key={pack.id}
+                  title={pack.title}
+                  icon={pack.icon}
+                  price={pack.price}
+                  path={pack.path}
+                />
+                )
+              }
+
+            </div>
+          </div>
+        </ContainerPackMemories>
       </Container>
     </ContainerRoot>
   )
 }
 
 export default Home;
+
+const getStaticProps: GetStaticProps = async () => {
+  return {
+    props: {
+      PhotosPortfolio
+    }
+  }
+}
