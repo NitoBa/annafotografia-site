@@ -4,8 +4,12 @@ import { Container, SideaBar } from './styles';
 import { FiAlignJustify, FiArrowLeft } from 'react-icons/fi';
 import { useState } from "react"
 
+interface NavProps {
+    color?: string;
+}
 
-const Navbar: React.FC = () => {
+
+const Navbar: React.FC<NavProps> = (props: NavProps) => {
 
     const [isHiddenSidebar, setIsHiddenSidebar] = useState<boolean>(true);
 
@@ -53,7 +57,7 @@ const Navbar: React.FC = () => {
 
                 </li>
                 <li>
-                    <button>
+                    <button onClick={() => scroll('contato')}  >
                         Contato
                     </button>
 
@@ -69,19 +73,19 @@ const Navbar: React.FC = () => {
                     </button>
                         </li>
                         <li>
-                            <button>
+                            <button onClick={() => scroll('portfolio')}>
                                 Portfólio
                     </button>
 
                         </li>
                         <li>
-                            <button>
+                            <button onClick={() => scroll('pack-memories')}>
                                 Pacotes de memórias
                     </button>
 
                         </li>
                         <li>
-                            <button>
+                            <button onClick={() => scroll('contato')}>
                                 Contato
                     </button>
 

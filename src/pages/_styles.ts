@@ -296,6 +296,13 @@ export const ContainerPortfolio = styled.div`
                 width:20vw;
                 height: 215vh;
             }
+
+            @media(max-width:500px){
+                position:absolute;
+                z-index:-1;
+                width:20vw;
+                height: 155vh;
+            }
         }
 
         .sidebar-left{
@@ -377,7 +384,7 @@ export const ContainerPackMemories = styled.div`
                 max-width:100vw;
             }
 
-            @media(max-width:400px){
+            @media(max-width:500px){
                 grid-template-columns: 1fr;
                 max-width:100vw;
             }

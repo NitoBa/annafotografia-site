@@ -16,7 +16,7 @@ const Home: React.FC = () => {
         <title>Anna Fotografia</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <NavBar />
+      <NavBar color="white" />
       <Container id="home">
         <img className="bg-profile" src="/profile.jpg" alt="profile" />
         <ContainerHome>
@@ -100,7 +100,9 @@ const Home: React.FC = () => {
             </div>
           </div>
         </ContainerPackMemories>
-        <Footer />
+        <div id="contato">
+          <Footer />
+        </div>
       </Container>
     </ContainerRoot>
   )

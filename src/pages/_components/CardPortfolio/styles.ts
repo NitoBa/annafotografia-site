@@ -92,4 +92,8 @@ export const Container = styled.div`
       font-size:0.8rem;
     }
   }
+
+  @media(max-width:500px){
+    height: 40vh;
+  }
 `;

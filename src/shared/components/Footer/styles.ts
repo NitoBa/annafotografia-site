@@ -104,7 +104,15 @@ export const Container = styled.footer`
             
             }
         }
-    }  
+    }
+
+    @media(min-width:728px){
+        .content-footer-mobile{
+            display:none;
+        }
+    }
+
+
     
     @media(max-width:728px){
         .content-footer-desktop{

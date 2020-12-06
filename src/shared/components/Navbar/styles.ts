@@ -4,7 +4,7 @@ export const Container = styled.nav`
     display: flex;
     align-items:center;
     height:10vh;
-    
+    background-color:${props => props.color === "white" ? `white` : `var(--primaryColor)`};
     padding: 0 16px;
     justify-content: space-between;
 
@@ -27,7 +27,7 @@ export const Container = styled.nav`
           font-size: 20px;
         
           &:hover{
-            background-color: var(--primaryColor);
+            background-color: ${props => props.color === "white" ? `var(--primaryColor)` : `white`};
             color: white;
         }
 
