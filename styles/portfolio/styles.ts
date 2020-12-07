@@ -53,7 +53,7 @@ export const Container = styled.div`
         margin: auto;
         left:-50%;
         right:-50%;
-        bottom:-30%;
+        bottom:40%;
         .img{
             display:flex;
             align-items:center;
@@ -76,7 +76,7 @@ export const Container = styled.div`
 
             @media(max-width:700px){
                 width:90vw;
-                bottom:-50%;
+                bottom:40%;
             }
     }
 
