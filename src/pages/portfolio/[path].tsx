@@ -6,6 +6,7 @@ import { useState } from 'react';
 import { Container, GripPhotos } from '../../../styles/portfolio/styles';
 import PhotosPortfolio from '../../data/photos_portfolio'
 import Head from 'next/head';
+import { ContainerRoot } from '../../../styles/_styles';
 
 interface Photos {
     id: string;
@@ -48,38 +49,40 @@ const PorfolioDetailsPage = ({ photosPortfolio }) => {
 
     return (
         <>
-            <Container onClick={closeImage}>
-                <Head>
-                    <title>Portfólio - {photosPortfolio.title}</title>
-                    <link rel="icon" href="/favicon.ico" />
-                </Head>
+            <ContainerRoot>
                 <NavBar colorNav="ho-home" />
-                <div className="title-photos">
-                    <h3>
-                        {photosPortfolio.title}
-                    </h3>
-                </div>
-                <div id="image-details" style={{ display: "none" }}>
-                    <figure id="image-figure" className="img">
-                    </figure>
-                </div>
-                <GripPhotos id="portfolio-container">
+                <Container onClick={closeImage}>
+                    <Head>
+                        <title>Portfólio - {photosPortfolio.title}</title>
+                        <link rel="icon" href="/favicon.ico" />
+                    </Head>
+                    <div className="title-photos">
+                        <h3>
+                            {photosPortfolio.title}
+                        </h3>
+                    </div>
+                    <div id="image-details" style={{ display: "none" }}>
+                        <figure id="image-figure" className="img">
+                        </figure>
+                    </div>
+                    <GripPhotos id="portfolio-container">
 
-                    {
-                        photos.map((photo, index) => {
-                            return (
-                                <figure key={index} className="img" onClick={() => viewImage(photo)} >
-                                    <img src={`/${photo}`} alt="" />
-                                </figure>
-                            )
-                        })
-                    }
+                        {
+                            photos.map((photo, index) => {
+                                return (
+                                    <figure key={index} className="img" onClick={() => viewImage(photo)} >
+                                        <img src={`/${photo}`} alt="" />
+                                    </figure>
+                                )
+                            })
+                        }
 
-                </GripPhotos>
-            </Container>
-            <div id="contato">
-                <Footer />
-            </div>
+                    </GripPhotos>
+                </Container>
+                <div id="contato">
+                    <Footer />
+                </div>
+            </ContainerRoot>
         </>
     );
 }
