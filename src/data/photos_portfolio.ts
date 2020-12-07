@@ -1,14 +1,6 @@
+import { IPhotosPortfolio } from '../shared/interfaces/portfolio';
 
-interface PhotosPortfolio {
-    id: string;
-    title: string;
-    coverImg: string;
-    photosQuantity: number;
-    path: string;
-    photos: string[];
-}
-
-const PhotosPortfolio: PhotosPortfolio[] = [
+const PhotosPortfolio: IPhotosPortfolio[] = [
     {
         id: "1",
         coverImg: "/casamento.jpg",

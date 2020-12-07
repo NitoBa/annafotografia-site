@@ -1,5 +1,6 @@
+import { Pack } from '../shared/interfaces/pack';
 
-const PackMemories = [
+const PackMemories: Pack[] = [
     {
         id: "1",
         icon: "/icon-pack-1.svg",

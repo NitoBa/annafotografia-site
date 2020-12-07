@@ -7,15 +7,8 @@ import { Container, GripPhotos } from '../../../styles/portfolio/styles';
 import PhotosPortfolio from '../../data/photos_portfolio'
 import Head from 'next/head';
 import { ContainerRoot } from '../../../styles/_styles';
+import { IPhotosPortfolio } from '../../shared/interfaces/portfolio';
 
-interface Photos {
-    id: string;
-    title: string;
-    coverImg: string;
-    photosQuantity: number;
-    path: string;
-    photos: string[];
-}
 
 const PorfolioDetailsPage = ({ photosPortfolio }) => {
 
@@ -101,7 +94,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async (context) => {
     const { path } = context.params;
-    const photosPortfolio: Photos = PhotosPortfolio.find(photo => path == photo.path);
+    const photosPortfolio: IPhotosPortfolio = PhotosPortfolio.find(photo => path == photo.path);
 
     return {
         props: {
