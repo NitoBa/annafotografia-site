@@ -10,6 +10,7 @@ export const Container = styled.div`
   flex-direction:column;
 
   .bg-profile{
+      display:block;
       height:90vh;
       width: 100vw;
       object-fit: cover;
@@ -22,7 +23,7 @@ export const ContainerHome = styled.main`
     display:flex;
     align-items: center;
     justify-content:center;
-    background: linear-gradient(180deg, rgba(150, 143, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(180deg, var(--gradientColor) 0%, rgba(255, 255, 255, 0) 100%);
     display:flex;
     height:90vh;
     width: 100vw;
@@ -216,7 +217,7 @@ export const ContainerAbout = styled.div`
             /* width:500px; */
             background-color:var(--primaryColorLight);
             >img{
-                
+                display:block;
                 width:90%;
                 height:90%;
                 object-fit:cover;

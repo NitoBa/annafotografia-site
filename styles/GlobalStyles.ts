@@ -5,11 +5,13 @@ export default createGlobalStyle`
 
 
 :root{
-  --primaryColor:#6C63FF;
-  --primaryColorLight:#928BFF;
-  --primaryColorDark: #615ADA;
+  --primaryColor:#C95CEE;
+  --primaryColorLight:#E6BBF4;
+  --primaryColorDark: #7E1AA0;
   --whatsappColor:#25D366;
   --whatsappColorDark:#075E54;
+  --bodyColor:#FCF7F7;
+  --gradientColor:rgb(236, 215, 243, 0.8);
 
 
   @font-face {
