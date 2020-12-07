@@ -64,6 +64,22 @@ export const Container = styled.div`
         }
     }
 
+    @media(max-width:900px){
+        background-color:white;
+        >img {
+            filter:invert(0);
+        }
+
+        .title, .price{
+            color:black;
+        }
+
+        > a{
+            background-color:var(--primaryColor);
+            color:white;
+        }
+
+    }
 
 
     
