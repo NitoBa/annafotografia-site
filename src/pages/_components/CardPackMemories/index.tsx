@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 
-import { Container } from './styles';
+import { Container } from '../../../../styles/components/CardPackMemories/styles';
 
 interface CardPackMemoriesProps {
     icon: string;

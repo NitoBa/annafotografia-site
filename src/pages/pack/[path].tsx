@@ -7,10 +7,10 @@ import { FaWhatsapp } from 'react-icons/fa';
 import PackMemories from '../../data/pack_memories'
 
 
-import { Container } from './styles';
+import { Container } from '../../../styles/pack/styles';
 import { GetStaticPaths, GetStaticProps } from 'next';
 
-export default function PackDetailsPage({ pack }) {
+const PackDetailsPage = ({ pack }) => {
     return (
         <>
             <Container>
@@ -68,6 +68,8 @@ export default function PackDetailsPage({ pack }) {
         </>
     );
 }
+
+export default PackDetailsPage;
 
 
 export const getStaticPaths: GetStaticPaths = async () => {

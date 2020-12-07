@@ -1,7 +1,6 @@
 import Link from 'next/link';
-import React from 'react';
 
-import { Container } from './styles';
+import { Container } from '../../../../styles/components/CardPortfolio/styles';
 
 interface CardPortfolioProps {
     coverImg: string;

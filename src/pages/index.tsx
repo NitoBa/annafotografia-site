@@ -4,7 +4,7 @@ import Footer from '../shared/components/Footer'
 import { FiInstagram, FiMail, FiArrowDown } from 'react-icons/fi';
 import CardPortfolio from './_components/CardPortfolio'
 import CardPackMemories from './_components/CardPackMemories'
-import { ContainerRoot, Container, ContainerHome, ContainerAbout, ContainerPortfolio, ContainerPackMemories } from './_styles';
+import { ContainerRoot, Container, ContainerHome, ContainerAbout, ContainerPortfolio, ContainerPackMemories } from '../../styles/_styles';
 
 import PhotosPortfolio from '../data/photos_portfolio'
 import PackMemories from '../data/pack_memories'

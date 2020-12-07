@@ -14,8 +14,8 @@ const PhotosPortfolio: PhotosPortfolio[] = [
         coverImg: "/casamento.jpg",
         title: "Casamentos",
         photosQuantity: 5,
+        photos: ["criativa.jpg", "profile.jpg", "casamento.jpg", "retrato.jpg", "casamento.jpg", "criativa.jpg", "profile.jpg"],
         path: "casamentos",
-        photos: ["photo1", "photo2", "photo3", "photo4", "photo5"],
     },
     {
         id: "2",
