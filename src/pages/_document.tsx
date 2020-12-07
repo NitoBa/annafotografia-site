@@ -40,7 +40,7 @@ export default class MyDocument extends Document {
                     <meta property="og:title" content="Anna Carolinne Fotografia" />
                     <meta property="og:url" content="https://annafotografia.vercel.app/" />
                     <meta property="og:description" content="Anna Carolinne Fotografia - Crie memórias atráves das lentes" />
-                    {/* <meta property="og:image" content="https://annafotografia.vercel.app/public/annafotografia.jpg" /> */}
+                    <meta property="og:image" content="https://i.ibb.co/V3Kdz6p/annafotografia.jpg" />
                     <meta property="og:image:type" content="image/jpg" />
                     <meta property="og:type" content="website" />
                 </Head>
