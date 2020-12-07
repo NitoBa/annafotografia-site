@@ -3,7 +3,7 @@ import { GetStaticPaths, GetStaticProps, NextPage } from 'next';
 import NavBar from '../../shared/components/Navbar'
 import Footer from '../../shared/components/Footer'
 import { useRouter } from 'next/router'
-import { Container, ContainerRoot } from './styles';
+import { Container } from './styles';
 import PhotosPortfolio from '../../data/photos_portfolio'
 import Head from 'next/head';
 
@@ -19,23 +19,26 @@ interface Photos {
 function PorfolioDetailsPage({ photosPortfolio }) {
 
     return (
-        <ContainerRoot>
-            <Head>
-                <title>Anna Fotografia</title>
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
-            <NavBar colorNav="ho-home" />
+        <>
+
             <Container>
+
+                <Head>
+                    <title>Anna Fotografia</title>
+                    <link rel="icon" href="/favicon.ico" />
+                </Head>
+                <NavBar colorNav="ho-home" />
                 <div className="title-photos">
                     <h3>
                         {photosPortfolio.title}
                     </h3>
                 </div>
-                <div id="contato">
-                    <Footer />
-                </div>
+
             </Container>
-        </ContainerRoot>
+            <div id="contato">
+                <Footer />
+            </div>
+        </>
     );
 }
 

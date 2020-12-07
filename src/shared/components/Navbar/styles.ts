@@ -6,6 +6,7 @@ export const Container = styled.nav.attrs(props => ({
     display: flex;
     align-items:center;
     height:10vh;
+    width:100vw;
     background-color:${props => props.colorNav === "home" ? `white` : `var(--primaryColor)`};
     padding: 0 16px;
     justify-content: space-between;

@@ -1,10 +1,4 @@
 import styled from 'styled-components';
-import NavBar from '../../shared/components/Navbar'
-
-
-export const ContainerRoot = styled.div`
-    /* position:absolute; */
-`
 
 export const Container = styled.div`
     display:flex;
