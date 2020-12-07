@@ -23,8 +23,9 @@ body {
 
 button {
     cursor: pointer;
-    border: 0;
-    color: #000;
+    border: none;
+    outline:none;
+    
 }
 
 a {
@@ -33,6 +34,6 @@ a {
 }
 
 ul{
-    list-style-type:note;
+  list-style-type: none;
 }
 `

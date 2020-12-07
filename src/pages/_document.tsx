@@ -33,7 +33,10 @@ export default class MyDocument extends Document {
     render() {
         return (
             <Html>
+
                 <Head>
+                    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
                     {/* <title>Mabloc</title>
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
                     <meta name="description" content="Mabloc - Immunity for Humanity. We research and develop Monoclonal Antibodies with over 90% accuracy." />
@@ -43,6 +46,7 @@ export default class MyDocument extends Document {
                     <meta property="og:image" content="https://mabloc.com/assets/Images/mabloc.jpg" />
                     <meta property="og:image:type" content="image/jpg" />
                     <meta property="og:type" content="website" /> */}
+
                 </Head>
 
                 <body>
