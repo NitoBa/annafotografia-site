@@ -34,13 +34,13 @@ export default class MyDocument extends Document {
         return (
             <Html>
                 <Head>
-                    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+                    {/* <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" /> */}
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
                     <meta name="description" content="Anna Carolinne Fotografia - Crie memórias atráves das lentes" />
                     <meta property="og:title" content="Anna Carolinne Fotografia" />
                     <meta property="og:url" content="https://annafotografia.vercel.app/" />
                     <meta property="og:description" content="Anna Carolinne Fotografia - Crie memórias atráves das lentes" />
-                    <meta property="og:image" content="https://i.ibb.co/V3Kdz6p/annafotografia.jpg" />
+                    <meta property="og:image" content="https://annafotografia.vercel.app/annafotografia.jpg" />
                     <meta property="og:image:type" content="image/jpg" />
                     <meta property="og:type" content="website" />
                 </Head>
