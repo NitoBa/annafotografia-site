@@ -30,10 +30,11 @@ const PackDetailsPage = ({ pack }) => {
                             <div id="line-white" />
                         </h1>
                         <p>
-                            {pack.details}
+                            {pack.details.quantity} <br />
+                            {pack.details.delivery} <br />
+                            {pack.details.looks} <br />
+                            {pack.details.brind}
                         </p>
-
-
                     </main>
                     <div className="price">
                         <span>

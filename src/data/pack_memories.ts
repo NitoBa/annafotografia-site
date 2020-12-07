@@ -6,7 +6,12 @@ const PackMemories = [
         title: "Biblis hyperia",
         price: "60,00",
         path: "biblis-hyperia",
-        details: "5 fotos\nEntregue em mídia digital\n1 look"
+        details: {
+            quantity: "5 fotos",
+            delivery: "Entregue em mídia digital",
+            looks: "1 look",
+            brind: "",
+        }
     },
     {
         id: "2",
@@ -14,7 +19,12 @@ const PackMemories = [
         title: "Hamadryas februa",
         price: "120,00",
         path: "hamadryas-februa",
-        details: "10 fotos\nEntregue em mídia digital\n2 looks\n2 fotos impressas estilo polaroid"
+        details: {
+            quantity: "10 fotos",
+            delivery: "Entregue em mídia digital",
+            looks: "2 look",
+            brind: "2 fotos impressas estilo polaroid",
+        }
     },
     {
         id: "3",
@@ -22,7 +32,12 @@ const PackMemories = [
         title: "Siproeta stelenes",
         price: "170,00",
         path: "siproeta-stelenes",
-        details: "15 fotos\nEntregue em mídia digital\n2 looks\n5 fotos impressas estilo polaroid"
+        details: {
+            quantity: "15 fotos",
+            delivery: "Entregue em mídia digital",
+            looks: "2 look",
+            brind: "5 fotos impressas estilo polaroid",
+        }
     },
     {
         id: "4",
@@ -30,7 +45,12 @@ const PackMemories = [
         title: "Zaretis isidora",
         price: "200,00",
         path: "zaretis-isidora",
-        details: "20 fotos\nEntregue em mídia digital\n3 looks\n5 fotos impressas estilo polaroid"
+        details: {
+            quantity: "20 fotos",
+            delivery: "Entregue em mídia digital",
+            looks: "3 look",
+            brind: "5 fotos impressas estilo polaroid",
+        }
     },
     {
         id: "5",
@@ -38,7 +58,12 @@ const PackMemories = [
         title: "Ascia manuste",
         price: "290,00",
         path: "ascia-manuste",
-        details: "20 fotos\nEntregue em mídia digital e pen drive\n3 looks\n8 fotos impressas estilo polaroid"
+        details: {
+            quantity: "20 fotos",
+            delivery: "Entregue em mídia digital e pen drive",
+            looks: "3 look",
+            brind: "8 fotos impressas estilo polaroid",
+        }
     },
     {
         id: "6",
@@ -46,7 +71,12 @@ const PackMemories = [
         title: "Dannaus gillipus",
         price: "350,00",
         path: "dannaus-gillipus",
-        details: "40 fotos\nEntregue em mídia digital e pen drive\n3 looks\n8 fotos impressas estilo polaroid"
+        details: {
+            quantity: "40 fotos",
+            delivery: "Entregue em mídia digital e pen drive",
+            looks: "3 look",
+            brind: "8 fotos impressas estilo polaroid",
+        }
     },
 
 ]

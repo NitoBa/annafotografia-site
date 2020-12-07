@@ -36,7 +36,7 @@ export const Container = styled.div`
             margin-top:30px;
             text-align:center;
             color:white;
-            width:30%;
+            width:90%;
         }
 
         #line-white{

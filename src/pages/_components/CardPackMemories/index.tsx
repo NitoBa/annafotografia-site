@@ -23,7 +23,7 @@ const CardPackMemories: React.FC<CardPackMemoriesProps> = (props: CardPackMemori
 
             <Link href={`/pack/${props.path}`}>
                 <a>
-                    Adiquir
+                    Adquirir
                 </a>
             </Link>
         </Container>
