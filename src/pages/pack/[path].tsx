@@ -10,8 +10,9 @@ import PackMemories from '../../data/pack_memories'
 import { Container } from '../../../styles/pack/styles';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { ContainerRoot } from '../../../styles/_styles';
+import { Pack } from '../../shared/interfaces/pack';
 
-const PackDetailsPage = ({ pack }) => {
+const PackDetailsPage = ({ pack }: { pack: Pack }) => {
     return (
         <>
             <ContainerRoot>

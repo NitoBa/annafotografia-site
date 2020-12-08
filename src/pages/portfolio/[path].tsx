@@ -10,9 +10,7 @@ import { ContainerRoot } from '../../../styles/_styles';
 import { IPhotosPortfolio } from '../../shared/interfaces/portfolio';
 
 
-const PorfolioDetailsPage = ({ photosPortfolio }) => {
-
-    const { photos }: { photos: string[] } = photosPortfolio;
+const PorfolioDetailsPage = ({ photosPortfolio }: { photosPortfolio: IPhotosPortfolio }) => {
 
     const [isViewImage, setisViewImage] = useState<boolean>(false);
 
@@ -61,7 +59,7 @@ const PorfolioDetailsPage = ({ photosPortfolio }) => {
                     <GripPhotos id="portfolio-container">
 
                         {
-                            photos.map((photo, index) => {
+                            photosPortfolio.photos.map((photo: string, index) => {
                                 return (
                                     <figure key={index} className="img" onClick={() => viewImage(photo)} >
                                         <img src={`/${photo}`} alt="" />
