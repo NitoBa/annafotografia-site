@@ -56,7 +56,7 @@ export const Container = styled.div`
             }
 
             >p{
-                width:60%;
+                width:90%;
             }
         }
     }
