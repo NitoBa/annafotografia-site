@@ -50,13 +50,13 @@ const PackDetailsPage = ({ pack }) => {
                             Entrar em contato
                 </span>
                         <div className="buttons">
-                            <a href={`mailto:annacarolinnefotografia@gmail.com?subject=Contato para fotografia&body=Olá! Fiquei interessado no pacote${pack.title} gostaria de marcar um ensaio`} target="blank" className="icon-contact" id="email">
+                            <a href={`mailto:annacarolinnefotografia@gmail.com?subject=Contato para fotografia&body=Olá! Fiquei interessado no pacote ${pack.title} gostaria de marcar um ensaio`} target="blank" className="icon-contact" id="email">
                                 <FiMail color="white" size={20} />
                                 <span>
                                     Email
                         </span>
                             </a>
-                            <a href={`https://wa.me/5586981423082?text=Olá! Fiquei interessado no pacote${pack.title} gostaria de marcar um ensaio`} target="blank" className="icon-contact" id="whatsapp">
+                            <a href={`https://wa.me/5586981423082?text=Olá! Fiquei interessado no pacote ${pack.title} gostaria de marcar um ensaio`} target="blank" className="icon-contact" id="whatsapp">
                                 <FaWhatsapp color="white" size={20} />
                                 <span>
                                     Whatsapp
