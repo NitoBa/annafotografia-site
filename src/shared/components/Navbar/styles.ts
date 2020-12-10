@@ -5,7 +5,7 @@ export const Container = styled.nav.attrs(props => ({
 }))`
     display: flex;
     align-items:center;
-    height:10vh;
+    height:70px;
     width:100vw;
     background-color:${props => props.colorNav === "home" ? `white` : `var(--primaryColor)`};
     padding: 0 16px;
@@ -25,6 +25,7 @@ export const Container = styled.nav.attrs(props => ({
 
   .container-nav-options{
       display: flex;
+      margin-right:15px;
       > li + li{
           margin-left: 70px;
       }
