@@ -1,15 +1,41 @@
 import styled from 'styled-components';
 
+
 export const Container = styled.div`
+
+    @keyframes animTitle {
+        from{
+            width:0;
+        }
+        to{
+            width:20vw;
+            
+        }
+    }
+
+    @keyframes animTitleAt900px {
+        from{
+            width:0;
+        }
+        to{
+            width:40vw;
+            
+        }
+    }
+
+
     display:flex;
     flex-direction:column;
 
     .title-photos{
+        animation-name:  animTitle;
+        animation-duration:1s;
+        animation-fill-mode:forwards;
         margin-top:35px;
         display:flex;
         align-items:center;
+        /* width:20vw; */
         justify-content:center;
-        width:20vw;
         height:50px;
         background-color:var(--primaryColor);
         >h3{
@@ -19,7 +45,7 @@ export const Container = styled.div`
 
 
         @media(max-width:900px){
-            width:40vw;
+            animation-name:animTitleAt900px;
 
             >h3{
                 font-size:1.2rem;

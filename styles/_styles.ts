@@ -92,6 +92,8 @@ export const ContainerHome = styled.main`
             color: white;
             font-weight: 400;
             transform: translateY(-100px);
+            text-shadow: 0 8px 8px rgba(0,0,0, 0.3);
+
         }
         h2{
             font-size:30px;
