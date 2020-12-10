@@ -65,6 +65,10 @@ body {
 
 }
 
+body{
+  overflow-x:hidden;
+}
+
 button {
     cursor: pointer;
     border: none;
