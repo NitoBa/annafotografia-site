@@ -394,6 +394,7 @@ export const ContainerPackMemories = styled.div`
             #line-blue-pack-memories{
                 height:5px;
                 width:70%;
+                border-radius: 16px;
                 background-color:var(--primaryColor);
 
                 @media(max-width:370px){
