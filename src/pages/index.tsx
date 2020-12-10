@@ -8,8 +8,35 @@ import { ContainerRoot, Container, ContainerHome, ContainerAbout, ContainerPortf
 
 import PhotosPortfolio from '../data/photos_portfolio'
 import PackMemories from '../data/pack_memories'
+import { useEffect } from 'react';
 
 const Home: React.FC = () => {
+
+  function animateBackground() {
+    const ulSquares = document.querySelector(".squares");
+
+    for (let i = 0; i < 20; i++) {
+      const li = document.createElement("li");
+      li.innerHTML = '<img src="./icon-pack-2.svg" alt="" />'
+      const random = (min: number, max: number) => Math.floor(Math.random() * (max - min) + min)
+      const size = random(120, 10)
+      const position = random(99, 1)
+      const delay = random(5, 0.1)
+      const duration = random(10, 3)
+
+      li.style.width = `${size}px`
+      li.style.height = `${size}px`
+      li.style.bottom = `${size}px`
+      li.style.right = `${position}%`
+      li.style.animationDelay = `${delay}s`
+      li.style.animationDuration = `${duration}s`
+
+      ulSquares.appendChild(li)
+    }
+  }
+
+  useEffect(animateBackground, [])
+
   return (
     <ContainerRoot id="div-home">
       <Head>
@@ -19,7 +46,12 @@ const Home: React.FC = () => {
       <NavBar colorNav="home" />
       <Container id="home">
         <img className="bg-profile" src="/profile.jpg" alt="profile" />
-        <ContainerHome>
+        <ContainerHome id="bg-main">
+          <ul className="squares">
+            {/* <li>
+              <img src="./icon-pack-2.svg" alt="" />
+            </li> */}
+          </ul>
           <div className="container-icons">
             <a href="https://www.instagram.com/annafotografia.s/" target="_blank">
               <button>

@@ -31,14 +31,50 @@ export const ContainerHome = styled.main`
     animation-name: animated-gradient;
     animation-duration: 4s;
     animation-iteration-count: infinite;
+
+
+
     
-    
+    .squares{
+        >li {
+            opacity: 0;
+            display:block;
+            height:40px;
+            width:40px;
+            position: absolute;
+            border-radius:32px;
+            bottom: 0;
+            z-index: -1;
+            animation-name: animatedSquares;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+            > img {
+                filter: invert(1);
+            }
+        }
+
+    }
 
 
     @keyframes animated-text {
         33%  {color:grey}
         66%  {color:white}
         100%  {color:black}
+    }
+
+
+    @keyframes animatedSquares{
+        from{
+            opacity: 0;
+            transform: translateY(0);
+        }
+        50%{
+            opacity: 1;
+        }
+        to{
+            opacity: 0;
+            transform: translateY(-900px) rotate(960deg);
+        }
     }
 
 
