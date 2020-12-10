@@ -39,11 +39,13 @@ const Navbar: React.FC<NavProps> = (props: NavProps) => {
     return (
         <Container className={props.colorNav} >
             <Link href="/">
-                <img
-                    className="logo"
-                    src="/icon-pack-2.svg"
-                    alt="logo"
-                />
+                <div id="logo-container">
+                    <img
+                        className="logo"
+                        src="/icon-pack-2.svg"
+                        alt="logo"
+                    />
+                </div>
             </Link>
             <FiAlignJustify size={35} id="icon" onClick={toggleSideBar} />
             <ul className="container-nav-options">

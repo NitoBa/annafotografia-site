@@ -11,12 +11,30 @@ export const Container = styled.nav.attrs(props => ({
     padding: 0 16px;
     justify-content: space-between;
 
-  .logo {
-      width:45px;
-      height:45px;
-      cursor: pointer;
-      filter: ${props => props.className === "home" ? `invert(0)` : `invert(1)`};
-  }
+    #logo-container{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        transition: .2s;
+        width:45px;
+        height:45px;
+        .logo {
+        width:100%;
+        cursor: pointer;
+        transition: .2s;
+        filter: ${props => props.className === "home" ? `invert(0)` : `invert(1)`}; 
+        }
+        &:hover{
+        background-color: ${props => props.className === "home" ? `var(--primaryColor)` : `white`};
+        border-radius:10px;
+        padding: 4px;
+        .logo{
+            filter: ${props => props.className === "home" ? `invert(1)` : `invert(0)`};
+        }        
+      }
+    }
+
+
 
   #icon{
     color: ${props => props.colorNav === "home" ? `black` : `white`};
