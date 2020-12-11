@@ -127,6 +127,7 @@ export const Container = styled.div`
                     background-color:var(--primaryColor);
                     &:hover{
                         background-color:var(--primaryColorDark);
+                        transform: scale(1.05);
 
                     }
                 }
@@ -135,6 +136,7 @@ export const Container = styled.div`
 
                     &:hover{
                         background-color:var(--whatsappColorDark);
+                        transform: scale(1.05);
 
                     }
                 }
