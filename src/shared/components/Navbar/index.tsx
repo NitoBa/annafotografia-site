@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-import { Container, SideaBar } from './styles';
+import { Container, SideaBar, Nav } from './styles';
 import { FiAlignJustify, FiArrowLeft } from 'react-icons/fi';
 import { useState } from "react"
 import { useRouter } from 'next/router'
@@ -75,7 +75,7 @@ const Navbar: React.FC<NavProps> = (props: NavProps) => {
             </ul>
             <SideaBar id={isHiddenSidebar ? "hidden-sidebar" : "sidebar"}>
                 <FiArrowLeft size={35} color="white" className="icon-back" id={isHiddenSidebar ? "hidden-icon" : "icon-back"} onClick={toggleSideBar} />
-                <div id="nav">
+                <Nav id={isHiddenSidebar ? "hidden-nav" : "nav"}>
                     <ul className="container-nav-options-mobile">
                         <li>
                             <button onClick={() => scroll('about')} >
@@ -101,7 +101,7 @@ const Navbar: React.FC<NavProps> = (props: NavProps) => {
 
                         </li>
                     </ul>
-                </div>
+                </Nav>
             </SideaBar>
 
         </Container>

@@ -80,28 +80,21 @@ export const Container = styled.nav.attrs(props => ({
 `;
 
 export const SideaBar = styled.div`
-    display:${props => (props.id === "sidebar" ? `flex` : `none`)};
+    display:flex;
     flex-direction:column;
     right: 0;
     position: fixed;
     top:0;
-    z-index:${props => (props.id === "sidebar" ? `10000` : `-100000`)};
+    z-index:${props => (props.id === "sidebar" ? `1000` : `-10000000`)};
     background-color: var(--primaryColor);
     box-shadow: 0 6px 6px rgba(0,0,0, 0.3);
-    width:65vw;
+    width:${props => (props.id === "sidebar" ? `65vw` : `0`)};
     height:100%;
-    opacity:  ${props => (props.id === "sidebar" ? `1` : `0`)};
     transition: .2s;
     .icon-back{
         display:${props => (props.id === "hidden-icon" ? `none` : `flex`)};
         margin-top:20px;
         margin-left:20px;
-    }
-
-    #nav{
-        display:flex;
-        align-items:center;
-        justify-content:center;
     }
 
     .container-nav-options-mobile{
@@ -121,4 +114,10 @@ export const SideaBar = styled.div`
       }
     }
 `;
+
+export const Nav = styled.div`
+        display:${props => (props.id === "nav" ? `flex` : `none`)};
+        align-items:center;
+        justify-content:center;
+`
 
