@@ -80,12 +80,12 @@ export const Container = styled.nav.attrs(props => ({
 `;
 
 export const SideaBar = styled.div`
-    display:flex;
+    display:${props => (props.id === "sidebar" ? `flex` : `none`)};
     flex-direction:column;
     right: 0;
     position: fixed;
     top:0;
-    z-index:${props => (props.id === "sidebar" ? `10000` : `-1000`)};
+    z-index:${props => (props.id === "sidebar" ? `10000` : `-100000`)};
     background-color: var(--primaryColor);
     box-shadow: 0 6px 6px rgba(0,0,0, 0.3);
     width:65vw;
