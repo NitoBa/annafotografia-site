@@ -13,6 +13,7 @@ export const Container = styled.nav.attrs(props => ({
     position: fixed;
     top:0;
     z-index:100;
+    box-shadow: 0 5px 5px rgba(0,0,0, 0.2);
     #logo-container{
         display:flex;
         align-items:center;
