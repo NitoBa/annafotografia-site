@@ -85,7 +85,7 @@ export const SideaBar = styled.div`
     right: 0;
     position: fixed;
     top:0;
-    z-index:${props => (props.id === "sidebar" ? `100` : `-1000`)};
+    z-index:${props => (props.id === "sidebar" ? `10000` : `-1000`)};
     background-color: var(--primaryColor);
     box-shadow: 0 6px 6px rgba(0,0,0, 0.3);
     width:65vw;
