@@ -67,6 +67,7 @@ body {
 
 body{
   overflow-x:hidden;
+  margin-top:70px;
 }
 
 button {

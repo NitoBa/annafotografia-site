@@ -10,7 +10,9 @@ export const Container = styled.nav.attrs(props => ({
     background-color:${props => props.colorNav === "home" ? `white` : `var(--primaryColor)`};
     padding: 0 16px;
     justify-content: space-between;
-
+    position: fixed;
+    top:0;
+    z-index:100;
     #logo-container{
         display:flex;
         align-items:center;
@@ -79,12 +81,12 @@ export const Container = styled.nav.attrs(props => ({
 export const SideaBar = styled.div`
     display:flex;
     flex-direction:column;
-    position:absolute;
     right: 0;
+    position: fixed;
     top:0;
-    z-index:${props => (props.id === "sidebar" ? `10000` : `-1000`)};
+    z-index:${props => (props.id === "sidebar" ? `100` : `-1000`)};
     background-color: var(--primaryColor);
-    width:65vw;
+    width:${props => (props.id === "sidebar" ? `65vw` : `0`)};
     height:100%;
     opacity:  ${props => (props.id === "sidebar" ? `1` : `0`)};
     transition: .2s;
