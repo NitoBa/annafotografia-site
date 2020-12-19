@@ -87,6 +87,7 @@ export const SideaBar = styled.div`
     top:0;
     z-index:${props => (props.id === "sidebar" ? `100` : `-1000`)};
     background-color: var(--primaryColor);
+    box-shadow: 0 6px 6px rgba(0,0,0, 0.3);
     width:${props => (props.id === "sidebar" ? `65vw` : `0`)};
     height:100%;
     opacity:  ${props => (props.id === "sidebar" ? `1` : `0`)};
