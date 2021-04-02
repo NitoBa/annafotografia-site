@@ -59,7 +59,7 @@ export const Container = styled.div`
         }
 
         >a{
-            background-color: var(--primaryColorLight);
+            background-color: #ECAA78;
             color:white;
         }
     }

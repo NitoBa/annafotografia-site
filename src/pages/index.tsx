@@ -45,7 +45,7 @@ const Home: React.FC = () => {
       </Head>
       <NavBar colorNav="home" />
       <Container id="home">
-        <img className="bg-profile" src="/profile.jpg" alt="profile" />
+        <img className="bg-profile" src="/coverbg.jpg" alt="profile" />
         <ContainerHome id="bg-main">
           <ul className="squares">
             {/* <li>
@@ -84,10 +84,15 @@ const Home: React.FC = () => {
                 Sou uma fotógrafa amante de borboletas que buscar transformar a vida das pessoas através das lentes realizando registros de momentos especiais
             </p>
             </div>
+            <div id="card">
+              <p>
+                Vamos registrar momentos incríveis juntos?
+              </p>
+            </div>
           </div>
           <div className="container-photo">
             <div id="container-image">
-              <img src="/retrato.jpg" alt="image-sobre" />
+              <img src="/profile.png" alt="image-sobre" />
             </div>
           </div>
         </ContainerAbout>
@@ -99,18 +104,20 @@ const Home: React.FC = () => {
             </h1>
           </div>
           <div className="content-portfolio">
-            <div className="sidebar-left" />
-            <div id="content-div">
-              {
-                PhotosPortfolio.map((photos) => <CardPortfolio key={photos.id}
-                  coverImg={photos.coverImg}
-                  title={photos.title}
-                  photosQuantity={photos.photosQuantity}
-                  path={photos.path}
-                />)
-              }
+            {/* <div className="sidebar-left" /> */}
+            <div className="portfolio-container">
+              <div id="content-div">
+                {
+                  PhotosPortfolio.map((photos) => <CardPortfolio key={photos.id}
+                    coverImg={photos.coverImg}
+                    title={photos.title}
+                    photosQuantity={photos.photosQuantity}
+                    path={photos.path}
+                  />)
+                }
+              </div>
             </div>
-            <div className="sidebar-right" />
+            {/* <div className="sidebar-right" /> */}
 
           </div>
         </ContainerPortfolio>

@@ -5,13 +5,14 @@ export const Container = styled.div`
   align-items:center;
   justify-content:center;
   flex-direction:column;
-  height: 65vh;
-  width: 40vw;
+  height: 140%;
+  width: 120%;
   transition: .2s;
   cursor: pointer;
   position:relative;
   margin-bottom:10vh;
   transform:scale(1);
+  padding:16px;
   >img {
     object-fit:cover;
     position:absolute;
@@ -28,12 +29,13 @@ export const Container = styled.div`
     color: white;
   }
   >h1{
-    font-size:3rem;
+    
+    font-size:2.5rem;
     font-weight:normal;
   }
   >h3{
     font-weight:300;
-    font-size:2rem;
+    font-size:1.5rem;
     line-height:45px;
     
   }
@@ -48,7 +50,7 @@ export const Container = styled.div`
     color:white;
     border-radius:32px;
     padding:8px;
-    width:25%;
+    width:50%;
     margin-bottom:6%;
     transition: .2s;
     text-align: center;
@@ -69,8 +71,10 @@ export const Container = styled.div`
   
   
   @media(max-width:1200px){
-    width:85vw;
-    height: 80vh;
+    /* width:85vw; */
+    /* height: 40vh; */
+    height: 100%;
+
     margin-top:5vh;   
     >h1{
     font-size:1.9rem;
@@ -84,7 +88,7 @@ export const Container = styled.div`
   }
 
   @media(max-width:600px){
-    height: 60vh;
+    height: 100%;
 
     .view-more{
       width:40%;
@@ -94,6 +98,6 @@ export const Container = styled.div`
   }
 
   @media(max-width:500px){
-    height: 40vh;
+    height: 100%;
   }
 `;

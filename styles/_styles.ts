@@ -244,6 +244,20 @@ export const ContainerAbout = styled.div`
         }
     }
 
+    #card{
+        display:flex;
+        justify-content:center;
+        text-align:center;
+        background-color:var(--primaryColor);
+        margin-top:50px;
+        margin-left:6px;
+        margin-right:6px;
+        p {
+            color:white;
+            padding:10px;
+        }
+    }
+
     .container-photo{
         margin-top:120px;
         margin-bottom:30px;
@@ -288,6 +302,8 @@ export const ContainerAbout = styled.div`
 export const ContainerPortfolio = styled.div`
     display:flex;
     flex-direction: column;
+    margin-bottom: 50px;
+
     .title-portfolio{
         display:flex;
         align-items:center;
@@ -309,62 +325,31 @@ export const ContainerPortfolio = styled.div`
         
     }
 
-    .content-portfolio{
+    .portfolio-container{
         display:flex;
-        justify-content:space-between;
-        margin-top:50px;
-        
+        justify-content:center;
+        width:100vw;
 
-        .sidebar-left, .sidebar-right {
+        #content-div{
+            display:grid;
+            margin-top: 50px;
+            margin-bottom:50px;
+            grid-template-columns:1fr 1fr;
+            grid-gap:120px;
             
-            background-color:var(--primaryColor);
-            width:15vw;
 
-            
-            
             @media(max-width:1200px){
-                position:absolute;
-                z-index:-1;
-                width:20vw;
-                height: 275vh;
-
-            }
-            @media(max-width:600px){
-                position:absolute;
-                z-index:-1;
-                width:20vw;
-                height: 215vh;
+                grid-gap:80px;
             }
 
             @media(max-width:500px){
-                position:absolute;
-                z-index:-1;
-                width:20vw;
-                height: 155vh;
-            }
-        }
-
-        .sidebar-left{
-            @media(max-width:1200px){
-                position:absolute;
-                z-index:-1;
-                left:0;
-            }
-        }
-        .sidebar-right{
-            @media(max-width:1200px){
-                position:absolute;
-                z-index:-1;
+                grid-template-columns: 1fr;
+                grid-gap:30px;
                 
-                right:0;
             }
         }
-
-        @media(max-width:1200px){
-            justify-content:center;
-             
-            }
     }
+
 
 
 `

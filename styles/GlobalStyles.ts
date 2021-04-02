@@ -5,13 +5,13 @@ export default createGlobalStyle`
 
 
 :root{
-  --primaryColor:#C95CEE;
-  --primaryColorLight:#E6BBF4;
-  --primaryColorDark: #7E1AA0;
+  --primaryColor:#CF8044;
+  --primaryColorLight:#FDF6F2;
+  --primaryColorDark: #AC662A;
   --whatsappColor:#25D366;
   --whatsappColorDark:#075E54;
   --bodyColor:#FCF7F7;
-  --gradientColor:rgb(236, 215, 243, 0.8);
+  --gradientColor:rgba(255, 235, 235, 0.74);
 
 
   @font-face {
@@ -68,6 +68,7 @@ body {
 body{
   overflow-x:hidden;
   margin-top:70px;
+  background-color:var(--bodyColor);
 }
 
 button {

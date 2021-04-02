@@ -24,6 +24,30 @@ const PhotosPortfolio: IPhotosPortfolio[] = [
         photosQuantity: 8,
         path: "criativas",
         photos: [""],
+    },
+    {
+        id: "4",
+        coverImg: "/casamento.jpg",
+        title: "Casamentos",
+        photosQuantity: 5,
+        photos: ["criativa.jpg", "profile.jpg", "casamento.jpg", "retrato.jpg", "casamento.jpg", "criativa.jpg", "profile.jpg"],
+        path: "casamentos",
+    },
+    {
+        id: "5",
+        coverImg: "/retrato.jpg",
+        title: "Retratos",
+        photosQuantity: 15,
+        path: "retratos",
+        photos: [""],
+    },
+    {
+        id: "6",
+        coverImg: "/criativa.jpg",
+        title: "Fotos criativas",
+        photosQuantity: 8,
+        path: "criativas",
+        photos: [""],
     }
 ]
 
